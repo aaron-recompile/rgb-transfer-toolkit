@@ -1,0 +1,42 @@
+{
+    "project_info": {
+      "name": "RGB Transfer Toolkit",
+      "version": "1.0.0",
+      "description": "Complete RGB token transfer automation toolkit",
+      "author": "RGB Community",
+      "license": "MIT"
+    },
+    "rgb_config": {
+      "alice_dir": "/path/to/.alice",
+      "bob_dir": "/path/to/.bob",
+      "contract_id": "rgb:BppYGUUL-Qboz3UD-czwAaVV-!!Jkr1a-SE1!m1f-Cz$b0xs",
+      "network": "regtest",
+      "esplora_url": "http://localhost:3002"
+    },
+    "bitcoin_config": {
+      "docker_project": "bitlight-local-env",
+      "wallet_name": "alice_legacy",
+      "rpc_url": "http://localhost:18443",
+      "network": "regtest"
+    },
+    "key_derivation": {
+      "branch": 10,
+      "index": 1,
+      "path_comment": "BIP32 path: m/86'/1'/0'/10/1 for RGB Taproot addresses"
+    },
+    "security": {
+      "private_key_warning": "NEVER commit real private keys to version control!",
+      "recommended_practices": [
+        "Use environment variables for sensitive data",
+        "Use hardware wallets in production",
+        "Regularly backup wallet files",
+        "Test thoroughly on testnet before mainnet"
+      ]
+    },
+    "transfer_defaults": {
+      "default_amount": "500",
+      "confirmation_blocks": 1,
+      "fee_rate": "1.0",
+      "timeout_seconds": 300
+    }
+  }

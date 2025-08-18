@@ -1,0 +1,16 @@
+# RGB Transfer Toolkit Dependencies
+
+# Core dependencies for RGB transfers
+bip32>=4.0.0              # BIP32 key derivation
+base58>=2.1.1             # Base58 encoding/decoding
+
+# Optional dependencies for advanced features
+prometheus-client>=0.17.0  # Metrics and monitoring
+redis>=4.6.0              # Caching (optional)
+pytest>=7.4.0             # Testing framework
+pytest-asyncio>=0.21.0    # Async testing support
+
+# Development dependencies
+black>=23.0.0             # Code formatting
+flake8>=6.0.0             # Linting
+mypy>=1.5.0               # Type checking
